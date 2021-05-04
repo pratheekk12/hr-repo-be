@@ -20,6 +20,8 @@ logController.create =(req,res)=>{
 
 logController.show =(req,res)=>{
     const id = req.body.id
+    console.log(req.body)
+    console.log(id)
     Log.find({"profileID":id})
         .then((profile)=>{
             res.json(profile)
