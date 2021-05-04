@@ -9,9 +9,11 @@ usersController.register =(req,res)=>{
     const user = new User(body)
     user.save()
         .then((user)=>{
+		console.log("Logged in user=",user);
             res.json(user)
         })
         .catch((err)=>{
+		console.log("Log in error for  user=",user);
             res.json(err)
         })
 }
@@ -31,7 +33,7 @@ usersController.login =(req,res)=>{
                             id : user._id
                         }
                         const token = jwt.sign(tokenData,'grssl@123',{expiresIn : '2d'})
-                        
+                        console.log("User logged in successfully =",user); 
                         
                         res.json({
                             token : token,
@@ -40,17 +42,21 @@ usersController.login =(req,res)=>{
                             
                         })
                     }else {
+			    console.log('password does not match');
                         res.send('password does not match')
                     }
                 })
                 .catch((err)=>{
+			console.log("error",err);
                     res.json(err)
                 })
         }else{
+		console.log('Invalid emai/password ', error);
             res.json({error : 'Invalid email /password'})
         }
     })
     .catch((err)=>{
+	    console.log("error =",err);
         res.json(err)
     })
 

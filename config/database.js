@@ -8,7 +8,7 @@ const configureDB =() =>{
         useCreateIndex : true
     })
         .then(()=>{
-            console.log("connected to db")
+            console.log("Connected to db", process.env.MONGODB_URI)
         })
         .catch((err)=>{
             console.log(err)

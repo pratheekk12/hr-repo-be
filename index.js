@@ -27,6 +27,7 @@ expressOasGenerator.handleResponses(app, {});
 
 configureDB()
 app.use(express.json(),cors())
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(router)
 
 const fileStorageEngine =multer.diskStorage({
@@ -44,11 +45,11 @@ const fileStorageEngine =multer.diskStorage({
 const upload = multer({storage : fileStorageEngine })
 
 app.post('/hr-profiles/resume',upload.single("resume"),(req,res)=>{
-    console.log(req.file.filename)
+    console.log("file uploaded", req.file.filename)
     res.send("sucess")
 })
 
 
 app.listen(port,()=>{
-    console.log("server is running on ",port)
+    console.log("server is running on ",process.env.PORT)
 })
