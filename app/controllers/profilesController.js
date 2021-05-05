@@ -13,7 +13,7 @@ profileController.create=(req,res)=>{
         })
         .catch((err)=>{
 		console.log("profile could not be upload, id=",profile);
-            res.json(profile)
+            res.json(err)
         })
 }
 
@@ -56,7 +56,7 @@ profileController.profileUpdate=(req,res)=>{
             res.json(profile)
         })
         .catch((err)=>{
-		console.log("Error in Profile update, profie=",profile);
+		console.log("Error in Profile update, profie=",err);
             res.json(err)
         })
 }

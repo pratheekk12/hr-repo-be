@@ -18,6 +18,9 @@ const logSchema = new Schema({
     action : {
         type : String,
     },
+    reject_reason : {
+        type : String,
+    },
     created_At : {
         type: Date, 
         required: true, 

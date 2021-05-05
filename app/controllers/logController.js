@@ -7,8 +7,11 @@ logController.create =(req,res)=>{
     //console.log(body)
     const log = new Log(body)
     // console.log(log)
+    console.log(body)
     log.save()
+
     .then((log)=>{
+        console.log(log,"after")
         res.json(log)
     })
     .catch((err)=>{

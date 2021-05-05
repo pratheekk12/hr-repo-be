@@ -29,7 +29,7 @@ const profileSchema = new Schema({
     },
     alternatemob :{
         type : String,
-        required :true
+        // required :true
     },
     role :{
         type : String,
@@ -93,6 +93,10 @@ const profileSchema = new Schema({
     jobcode : {
         type : String,
         //required :true
+    },
+    currentLocation : {
+        type : String,
+        required :true
     }
 })
 
