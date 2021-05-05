@@ -44,7 +44,7 @@ const fileStorageEngine =multer.diskStorage({
 
 const upload = multer({storage : fileStorageEngine })
 
-app.post('/hr-profiles/resume',upload.single("resume"),(req,res)=>{
+app.post('/api/hr-profiles/resume',upload.single("resume"),(req,res)=>{
     console.log("file uploaded", req.file.filename)
     res.send("sucess")
 })
