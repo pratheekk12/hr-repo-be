@@ -1,0 +1,13 @@
+hosid,hospitalname,hospitallocation,rdatetime,escalatedID,appointmentID,diagonsticID
+1,"Manipal Hospitals-Old airport Road, Bengaluru",Bangalore,"2021-02-15 11:50:19","kasthuri.bai@manipalhospitals.com,amit.singh@manipalhospitals.com,fazil.k@manipalhospitals.com","appointments.bangalore@manipalhospitals.com,mhbradiolead@manipalhospitals.com,mhblablead@manipalhospital.com,homecare@manipalhospitals.com,corporate@manipalhospitals .com",diagnostics.mhb@manipalhospitals.com
+2,"Manipal Hospitals-Whitefield, Bengaluru",Whitefield,"2021-02-15 11:50:19",lavita.sequeira@manipalhospitals.com,appointments.mhw@manipalhospitals.com,diagnostic.mhw@manipalhospitals.com
+3,"Manipal Hospitals-Goa",Goa,"2021-02-15 11:50:19",pratima.bhadoria@manipalhospitals.com,appointments.goa@manipalhospitals.com,pratima.bhadoria@manipalhospitals.com
+4,"KMC Hospitals-Mangalore",Mangalore,"2021-02-15 11:50:19","sindhu.prasad@manipalhospitals.com,sushank@manipalhospitals.com",jayashri.shetty@manipalhospitals.com,sushank@manipalhospitals.com
+5,"Manipal Hospitals-Jayanagar, Bengaluru",Bangalore,"2021-02-15 11:50:19",palash@manipalhospitals.com,reception.mmh@manipalhospitals.com,reception.mmh@manipalhospitals.com
+6,"Manipal Hospitals-Salem",Salem,"2021-02-15 11:50:19","punitha.g@manipalhospitals.com,vashudev.godya@manipalhospitals.com",reception.salem@manipalhospitals.com,punitha.g@manipalhospitals.com
+7,"Manipal Hospitals-Jaipur",Jaipur,"2021-02-15 11:50:19","arpita.roy@manipalhospitals.com,purva.rawat@manipalhospitals.com",contactus.jaipur@manipalhospitals.com,contactus.jaipur@manipalhospitals.com
+8,"Manipal Super Speciality Hospitals-Vijayawada",Vijayawada,"2021-02-15 11:50:19","chaitanyababu.a@manipalhospitals.com,srinivas.ch@manipalhospitals.com,enquiry.vja@manipalhospitals.com","enquiry.vja@manipalhospitals.com,chaitanyababu.a@manipalhospitals.com","chaitanyababu.a@manipalhospitals.com,enquiry.vja@manipalhospitals.com"
+9,"Manipal Hospitals-Dwarka",Dwarka,"2021-02-15 11:50:19","karishma.chettri@manipalhospitals.com,callcenter.mhd@manipalhospitals.com","appointments.mhd@manipalhospitals.com,callcenter.mhd@manipalhospitals.com","lab.mhdpl@manipalhospitals.com,Diagnostics.mhd@manipalhospitals.com"
+10,"Manipal Hospitals-Malleshwaram",Malleshwaram,"2021-02-15 11:50:19","indrani.y@manipalhospitals.com,asha.mnsh@manipalhospitals.com",mnshbilling@manipalhospitals.com,mnshbilling@manipalhospitals.com
+11,"Manipal International Marketing",NULL,"2021-02-15 11:50:19","kasthuri.bai@manipalhospitals.com,amit.singh@manipalhospitals.com,fazil.k@manipalhospitals.com",NULL,NULL
+12,"Call Drop",NULL,NULL,NULL,NULL,NULL

@@ -41,15 +41,6 @@ const fileStorageEngine =multer.diskStorage({
         cb(null,file.originalname);
     },
 })
-
-const upload = multer({storage : fileStorageEngine })
-
-app.post('/api/hr-profiles/resume',upload.single("resume"),(req,res)=>{
-    console.log("file uploaded", req.file.filename)
-    res.send("sucess")
-})
-
-const upload1 = multer({storage : fileStorageEngine })
 const fileStorageEngine1 =multer.diskStorage({
     destination : (req,file,cb)=>{
        // cb(null,'./resumes')
@@ -58,14 +49,29 @@ const fileStorageEngine1 =multer.diskStorage({
     },
     filename : (req,file,cb)=>{
         console.log(req.path)
-        cb(null,file.fieldname + "-" + Date.now() + path.extname(file.originalname));
+        // cb(null,file.originalname+ Date.now);
+        let extArray = file.mimetype.split("/");
+        let extension = extArray[extArray.length - 1];
+        const uniqueSuffix = Date.now() 
+        cb(null, file.fieldname + '-' + uniqueSuffix + '.' + extension);
+
     },
 })
 
-// app.post('/api/hr-profiles/hire/documents',upload.single("resume"),(req,res)=>{
-//     console.log("file uploaded", req.file.filename)
-//     res.send("sucess")
-// })
+const upload = multer({storage : fileStorageEngine })
+
+const upload1 = multer({storage : fileStorageEngine1 })
+app.post('/api/hr-profiles/resume',upload.single("resume"),(req,res)=>{
+    console.log("file uploaded", req.file.filename)
+    res.send("sucess")
+})
+
+
+
+app.post('/api/hr-profiles/hire/documents',upload1.single("hire"),(req,res)=>{
+    console.log("file uploaded", req.file)
+    res.send("sucess")
+})
 
 app.listen(port,()=>{
     console.log("server is running on ",process.env.PORT)
