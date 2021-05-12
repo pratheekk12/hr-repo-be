@@ -62,10 +62,10 @@ const fileStorageEngine1 =multer.diskStorage({
     },
 })
 
-app.post('/api/hr-profiles/hire/documents',upload.single("resume"),(req,res)=>{
-    console.log("file uploaded", req.file.filename)
-    res.send("sucess")
-})
+// app.post('/api/hr-profiles/hire/documents',upload.single("resume"),(req,res)=>{
+//     console.log("file uploaded", req.file.filename)
+//     res.send("sucess")
+// })
 
 app.listen(port,()=>{
     console.log("server is running on ",process.env.PORT)
